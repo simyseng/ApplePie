@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
         print(currentGame.incorrectMovesRemaining)
+        print(currentGame.formattedWord)
     }
     
     var listOfWords = ["buccanner","basketball","soccer"]
@@ -41,8 +42,17 @@ class ViewController: UIViewController {
     }
     
     func updateUI() {
+        var letters = [String]()
+        for letter in currentGame.formattedWord {
+            letters.append(String(letter))
+        }
+        let wordWithSpacing = letters.joined(separator: " ")
+        correctWordLabel.text = wordWithSpacing
+        
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
+        
+   
     }
 
 
