@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet var letterButtons: [UIButton]!
     @IBAction func buttonTapped(_ sender: UIButton) {
         sender.isEnabled = false
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
+        currentGame.playerGuessed(letter: letter)
+        print(currentGame.incorrectMovesRemaining)
     }
     
     var listOfWords = ["buccanner","basketball","soccer"]
@@ -32,14 +36,13 @@ class ViewController: UIViewController {
     
     func newRound() {
         let newWord = listOfWords.removeFirst()
-        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
+        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters:  [])
         updateUI()
     }
     
     func updateUI() {
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
-        
     }
 
 
