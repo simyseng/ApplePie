@@ -7,6 +7,8 @@ The 5 parts of the code can be found in the 5 branches of this repository. The m
 ## Part 1: Building the Interface
 The user interface is created within `Main.storyboard`. Some code to link up the `IBOutlet`s and IBAction`s are included in the `viewcontroller`.
 
+Since most of part one involves using cursor, I have created a [video](https://youtu.be/1HfxmFjCUmQ) to demostrate the process of creating the user interface. 
+
 Codes are incrementally added from Part 2 to Part 5.
 
 ## Part 2: Beginning a Game
