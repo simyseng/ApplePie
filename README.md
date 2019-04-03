@@ -2,6 +2,8 @@
 
 This repository contains the source code of the Apple Pie end-of-chapter project of Unit 2 in App Development with Swift. It consists of the 5 parts of the project as printed in the [App Development with Swift](https://itunes.apple.com/us/book/app-development-with-swift/id1219117996?mt=11) iBook.
 
+The 5 parts of the code can be found in the 5 branches of this repository. The master branch contains the final completed code, which is the same as *part-5* while the other branches follows the completed individual parts as described in the iBook.
+
 ## Part 1: Building the Interface
 The user interface is created within `Main.storyboard`. Some code to link up the `IBOutlet`s and IBAction`s are included in the `viewcontroller`.
 
