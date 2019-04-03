@@ -19,8 +19,7 @@ class ViewController: UIViewController {
         let letterString = sender.title(for: .normal)!
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
-        print(currentGame.incorrectMovesRemaining)
-        print(currentGame.formattedWord)
+        updateUI()
     }
     
     var listOfWords = ["buccanner","basketball","soccer"]
@@ -45,7 +44,10 @@ class ViewController: UIViewController {
         var letters = [String]()
         for letter in currentGame.formattedWord {
             letters.append(String(letter))
+            print(letter)
+            print("Current formatted word: \(currentGame.formattedWord)")
         }
+        print(letters)
         let wordWithSpacing = letters.joined(separator: " ")
         correctWordLabel.text = wordWithSpacing
         
