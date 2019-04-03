@@ -5,7 +5,7 @@ This repository contains the source code of the Apple Pie end-of-chapter project
 The 5 parts of the code can be found in the 5 branches of this repository. The master branch contains the final completed code, which is the same as *part-5* while the other branches follows the completed individual parts as described in the iBook.
 
 ## Part 1: Building the Interface
-The user interface is created within `Main.storyboard`. Some code to link up the `IBOutlet`s and IBAction`s are included in the `viewcontroller`.
+The user interface is created within `Main.storyboard`. Some code to link up the `IBOutlet`s and `IBAction`s are included in the `viewcontroller`.
 
 Since most of part one involves using cursor, I have created a [video](https://youtu.be/1HfxmFjCUmQ) to demostrate the process of creating the user interface. 
 
