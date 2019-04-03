@@ -19,8 +19,7 @@ class ViewController: UIViewController {
         let letterString = sender.title(for: .normal)!
         let letter = Character(letterString.lowercased())
         currentGame.playerGuessed(letter: letter)
-        print(currentGame.incorrectMovesRemaining)
-        print(currentGame.formattedWord)
+        updateUI()
     }
     
     var listOfWords = ["buccanner","basketball","soccer"]
