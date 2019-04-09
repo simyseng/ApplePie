@@ -57,10 +57,7 @@ class ViewController: UIViewController {
         var letters = [String]()
         for letter in currentGame.formattedWord {
             letters.append(String(letter))
-            print(letter)
-            print("Current formatted word: \(currentGame.formattedWord)")
         }
-        print(letters)
         let wordWithSpacing = letters.joined(separator: " ")
         correctWordLabel.text = wordWithSpacing
         
